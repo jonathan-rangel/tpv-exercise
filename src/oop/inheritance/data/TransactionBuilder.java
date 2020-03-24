@@ -8,6 +8,8 @@ public class TransactionBuilder {
     private Card card;
     private LocalDateTime localDateTime;
 
+    TransactionBuilder(){
+    }
 
     public TransactionBuilder amountInCents(int amountInCents)
     {
