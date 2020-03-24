@@ -2,6 +2,20 @@ package oop.inheritance.ingenico;
 
 public class IngenicoDisplay {
 
+    private static  IngenicoDisplay instance;
+
+    private IngenicoDisplay()
+    {
+
+    }
+
+    public static IngenicoDisplay getInstance()
+    {
+        if(instance == null)
+            instance = new IngenicoDisplay();
+        return instance;
+    }
+
     /**
      * Prints a message to specied position
      *
